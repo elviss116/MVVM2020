@@ -12,7 +12,7 @@ public class sUsuarioViewModel extends ViewModel {
     private SaveUsuarioUseCase saveUsuarioUseCase;
 
     /*
-    public sUsuarioViewModel(Usuario usuario){
+    public sUsuarioViewModel(UsuarioOb usuario){
         this.id = usuario.id;
         this.pwd = usuario.pass;
     } */

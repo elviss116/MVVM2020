@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".listRecycler_mvvm.ListRecyclerActivity"></activity>
+        <activity android:name=".save_mvvm2.Save2Activity" />
         <activity android:name=".save_mvvm.SaveDataActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -42,10 +42,10 @@ public class SaveUsuarioUseCase {
     public String grabar(String id, String pass)
     {
         ApiClient apiClient = RetrofitModul.getApiClient();
-        Call<Usuario> usuarioCall = apiClient.saveUsuario(id,pass);
-        usuarioCall.enqueue(new Callback<Usuario>() {
+        Call<UsuarioOb> usuarioCall = apiClient.saveUsuario(id,pass);
+        usuarioCall.enqueue(new Callback<UsuarioOb>() {
             @Override
-            public void onResponse(Call<Usuario> call, Response<Usuario> response) {
+            public void onResponse(Call<UsuarioOb> call, Response<UsuarioOb> response) {
                 if (response.isSuccessful() && response.body() != null){
                     Boolean success = response.body().getSuccess();
                     if (success){
@@ -54,7 +54,7 @@ public class SaveUsuarioUseCase {
                 }
             }
             @Override
-            public void onFailure(Call<Usuario> call, Throwable t) {
+            public void onFailure(Call<UsuarioOb> call, Throwable t) {
                 respuesta = t.getLocalizedMessage();
             }
         });

@@ -17,5 +17,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btn_activity_guardar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GRABAR2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_activity_guardar" />
+
+    <Button
+        android:id="@+id/btn_activity_lista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LISTA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_activity_guardar2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

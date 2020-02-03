@@ -19,23 +19,19 @@ public class SaveDataActivity extends AppCompatActivity {
     private Button grabar;
     private sUsuarioViewModel usuarioViewModel;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_save_data);
-
         configView();
 
     }
-
 
     private void configView(){
 
         username = findViewById(R.id.txt_username);
         pass = findViewById(R.id.txt_pwd);
         grabar = findViewById(R.id.btn_grabar);
-
         grabar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +47,6 @@ public class SaveDataActivity extends AppCompatActivity {
                                 Toast.makeText(SaveDataActivity.this,s,Toast.LENGTH_SHORT).show();
                             }
                         });
-
             }
         });
     }
