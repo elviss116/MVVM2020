@@ -7,6 +7,12 @@
     android:orientation="vertical"
     tools:context=".listRecycler_mvvm.ListRecyclerActivity">
 
+    <SearchView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/svFilter"
+        ></SearchView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
