@@ -28,6 +28,15 @@ public class ListFilterRecyclerActivity extends AppCompatActivity {
         usuarioListViewModel = ViewModelProviders.of(this).get(UsuarioListViewModel.class);
         configView();
         getList();
+
+
+    }
+    private void configView(){
+        rv = findViewById(R.id.rv_lista);
+        sv = findViewById(R.id.svFilter);
+        rv.setLayoutManager(new LinearLayoutManager(this));
+        rv.setAdapter(adapter);
+
         sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -41,13 +50,6 @@ public class ListFilterRecyclerActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-    }
-    private void configView(){
-        rv = findViewById(R.id.rv_lista);
-        sv = findViewById(R.id.svFilter);
-        rv.setLayoutManager(new LinearLayoutManager(this));
-        rv.setAdapter(adapter);
     }
 
     private void getList(){
