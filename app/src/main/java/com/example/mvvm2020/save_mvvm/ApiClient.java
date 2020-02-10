@@ -1,6 +1,7 @@
 package com.example.mvvm2020.save_mvvm;
 
 import com.example.mvvm2020.listRecycler_mvvm.model.UsuarioOb;
+import com.example.mvvm2020.listRecyclerFilter_mvvm.model.UsuarioOb2;
 import com.example.mvvm2020.save_mvvm.object.Usuario;
 
 import java.util.List;
@@ -23,4 +24,8 @@ public interface ApiClient {
 
     @GET("retrofit_listar.php")
     Call<List<UsuarioOb>> getUsu();
+
+
+    @GET("retrofit_listar.php")
+    Call<List<UsuarioOb2>> getUsu2();
 }

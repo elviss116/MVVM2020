@@ -5,12 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".listRecycler_mvvm.ListRecyclerActivity">
+    tools:context=".listRecyclerFilter_mvvm.ListFilterRecyclerActivity">
+
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/svFilter">
+    </SearchView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/rv">
+        android:id="@+id/rv_lista">
     </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
